@@ -1,0 +1,15 @@
+<!-- vaga/templates/vaga/apply.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicar para a Vaga</title>
+</head>
+<body>
+    <h1>Aplicar para a Vaga: {{ vaga.title }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <!-- Adicione os campos do formulário aqui -->
+        <button type="submit">Enviar Aplicação</button>
+    </form>
+</body>
+</html>

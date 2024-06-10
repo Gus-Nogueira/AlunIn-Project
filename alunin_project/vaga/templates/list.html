@@ -1,0 +1,18 @@
+<!-- vaga/templates/list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Vagas</title>
+</head>
+<body>
+    <h1>Lista de Vagas</h1>
+    <ul>
+        <!-- Aqui você pode iterar sobre as vagas e listar -->
+        {% for vaga in vagas %}
+            <li>
+                <a href="{% url 'detalhes' vaga.id %}">{{ vaga.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
